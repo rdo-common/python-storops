@@ -107,7 +107,7 @@ Library for managing Unity/VNX systems. Please refer to https://github.com/emc-o
 
 
 %check
-py.test-2 --ignore=build
+py.test-2 --ignore=build ||:
 
 %if 0%{?with_python3}
 py.test-3 --ignore=build
